@@ -13,10 +13,24 @@ function initNavbarAnimations() {
     const isDesktop = window.innerWidth >= 720;
 
     if (!isDesktop) {
-        gsap.set([navbarBg, navbarItems], {
+        gsap.set(navbarBg, {
             width: "100%",
-            height: "100vh",
+            height: "100svh",
+            top: 0,
+            left: 0,
+            xPercent: 0,
+            yPercent: 0,
         });
+
+        gsap.set(navbarItems, {
+            width: "100%",
+            height: "100svh",
+            top: 0,
+            left: 0,
+            xPercent: 0,
+            yPercent: 0,
+        });
+
         return;
     }
 
@@ -40,22 +54,23 @@ function initNavbarAnimations() {
             ".logo-hero .logo-text",
             {
                 scale: 0.6,
+                y: -50,
                 opacity: 0,
-                duration: 0.4,
+                duration: 0.5,
                 ease: "power3.inOut",
             },
-            0
+            0,
         )
         .to(
             ".logo-navbar .logo-text",
             {
                 scale: 1.5,
                 opacity: 1,
-                y: 10,
+                y: -10,
                 duration: 0.4,
                 ease: "power3.inOut",
             },
-            1
+            1,
         );
 
     /* ================= NAVBAR GLASS ================= */
@@ -81,7 +96,11 @@ function initNavbarAnimations() {
 
             navbarLinks.forEach((link, i) => {
                 gsap.set(link, {
-                    width: gsap.utils.interpolate(initialLinksWidths[i], link.scrollWidth, p),
+                    width: gsap.utils.interpolate(
+                        initialLinksWidths[i],
+                        link.scrollWidth,
+                        p,
+                    ),
                 });
             });
 
@@ -90,4 +109,6 @@ function initNavbarAnimations() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", initNavbarAnimations);
+document.addEventListener("DOMContentLoaded", () => {
+    initNavbarAnimations();
+});

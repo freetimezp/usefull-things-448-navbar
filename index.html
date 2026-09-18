@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/vite.svg" type="image/svg+xml" />
-        <link rel="stylesheet" href="./src/assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Project</title>
     </head>
 
     <body>
         <div class="navbar-backdrop">
             <div class="navbar-img">
-                <img src="./src/assets/images/navbar.jpg" alt="" />
+                <img src="./assets/images/navbar.jpg" alt="" />
             </div>
 
             <div class="navbar-background"></div>
@@ -20,31 +20,68 @@
 
         <div class="navbar-items">
             <div class="navbar-links">
-                <a href="#">Index</a>
-                <a href="#">Studio</a>
+                <a href="#">Journey</a>
+                <a href="#">Stories</a>
+                <a href="#">Gallery</a>
             </div>
             <div class="navbar-links">
-                <a href="#">Gallery</a>
+                <a href="#">Moments</a>
                 <a href="#">Contact</a>
+                <a href="#">Blog</a>
             </div>
 
             <!-- HERO LOGO -->
             <div class="logo-hero">
-                <span class="logo-text">BRAND</span>
+                <div class="logo-hero-inner">
+                    <span class="logo-ghost">WAY</span>
+                    <span class="logo-text">WAY</span>
+                </div>
             </div>
 
             <!-- NAVBAR LOGO -->
             <div class="logo-navbar">
-                <span class="logo-text">BRAND</span>
+                <span class="logo-text">WAY</span>
             </div>
         </div>
 
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
         <section class="hero">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+            <div class="hero-copy">
+                <span class="eyebrow"> 01 — THE JOURNEY </span>
+
+                <h1>
+                    Life is not about
+                    <span>arriving.</span>
+                </h1>
+
+                <p>
+                    It is about the roads we take, the people we meet, and the
+                    moments that quietly change us.
+                </p>
+            </div>
         </section>
 
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
         <section class="about">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, a!</h1>
+            <div class="about-copy">
+                <span class="eyebrow"> 02 — KEEP MOVING </span>
+
+                <h1>
+                    There is always
+                    <span>another road.</span>
+                </h1>
+
+                <p>
+                    We keep walking even when we cannot see what waits beyond
+                    the fog.
+                </p>
+            </div>
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
@@ -53,6 +90,6 @@
 
         <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
 
-        <script type="module" src="./src/assets/js/main.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>
