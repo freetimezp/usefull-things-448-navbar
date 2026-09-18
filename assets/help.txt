@@ -1,0 +1,47 @@
+      <a href="#">Journey</a>
+                <a href="#">Stories</a>
+                <a href="#">Gallery</a>
+
+
+
+                      <a href="#">Moments</a>
+                <a href="#">Contact</a>
+                <a href="#">Blog</a>
+
+
+
+    Life is not about
+                    <span>arriving.</span>
+
+
+
+
+    It is about the roads we take, the people we meet, and the
+                    moments that quietly change us.
+
+
+
+
+    There is always
+                    <span>another road.</span>
+
+
+
+
+    We keep walking even when we cannot see what waits beyond
+                    the fog.
+
+
+
+
+:root {
+    --base-100: #f9f4eb;
+    --base-200: #141414;
+}
+
+
+
+
+    const navbarBg = document.querySelector(".navbar-background");
+    const navbarItems = document.querySelector(".navbar-items");
+    const navbarLinks = document.querySelectorAll(".navbar-links");

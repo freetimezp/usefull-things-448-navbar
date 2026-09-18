@@ -50,6 +50,7 @@ a {
     font-size: 1.125rem;
     font-weight: 450;
     line-height: 0.9;
+    text-transform: uppercase;
 }
 
 .navbar-backdrop,
